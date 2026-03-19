@@ -1,0 +1,19 @@
+telemetry = false
+logLevel = "debug" # "debug" | "warn" | "error"
+
+[install]
+auto = "auto"
+saveTextLockfile = true
+exact = true
+
+[install.lockfile]
+save = true
+
+[install.security]
+scanner = "@socketsecurity/bun-security-scanner"
+
+[run]
+shell = "bun"
+silent = false
+bun = true
+

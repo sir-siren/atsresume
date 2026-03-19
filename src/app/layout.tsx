@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-    title: "Resume Builder — ATS Optimized",
+    title: "Resume Builder",
     description:
         "Build your ATS-optimized resume with a modern, black and white interface.",
     icons: {
