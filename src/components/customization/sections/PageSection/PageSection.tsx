@@ -9,9 +9,9 @@ import type {
 } from "@/types/customization.types";
 
 const PAGE_SIZE_OPTIONS: { value: PageSize; label: string }[] = [
-    { value: "A4", label: "A4  (210×297mm)" },
-    { value: "Letter", label: "Letter  (8.5×11in)" },
-    { value: "Legal", label: "Legal  (8.5×14in)" },
+    { value: "A4", label: "A4  (210x297mm)" },
+    { value: "Letter", label: "Letter  (8.5x11in)" },
+    { value: "Legal", label: "Legal  (8.5x14in)" },
 ];
 
 const DATE_FORMAT_OPTIONS: { value: DateFormat; label: string }[] = [

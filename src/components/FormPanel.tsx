@@ -214,7 +214,7 @@ export function FormPanel({ data, onChange, onLoad, onSave }: FormPanelProps) {
                         + Add
                     </Button>
                 </div>
-                {data.experience.map((exp, index) => (
+                {data.experience.map((exp) => (
                     <div
                         key={exp.id}
                         className="flex flex-col gap-4 p-4 border border-border-grey rounded-md relative group"
@@ -225,7 +225,7 @@ export function FormPanel({ data, onChange, onLoad, onSave }: FormPanelProps) {
                             className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity w-8 h-8"
                             onClick={() => removeExperience(exp.id)}
                         >
-                            ×
+                            x
                         </Button>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <Input
@@ -296,7 +296,7 @@ export function FormPanel({ data, onChange, onLoad, onSave }: FormPanelProps) {
                         + Add
                     </Button>
                 </div>
-                {data.education.map((edu, index) => (
+                {data.education.map((edu) => (
                     <div
                         key={edu.id}
                         className="flex flex-col gap-4 p-4 border border-border-grey rounded-md relative group"
@@ -307,7 +307,7 @@ export function FormPanel({ data, onChange, onLoad, onSave }: FormPanelProps) {
                             className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity w-8 h-8"
                             onClick={() => removeEducation(edu.id)}
                         >
-                            ×
+                            x
                         </Button>
                         <div className="grid grid-cols-1 gap-4">
                             <Input

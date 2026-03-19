@@ -4,11 +4,7 @@ import * as React from "react";
 import { useCustomizationStore } from "@/stores/customization.store";
 import { SliderInput } from "@/components/customization/ui/SliderInput";
 import { SegmentedControl } from "@/components/customization/ui/SegmentedControl";
-import type {
-    FontFamily,
-    FontOption,
-    FontCategory,
-} from "@/types/customization.types";
+import type { FontOption, FontCategory } from "@/types/customization.types";
 import { cn } from "@/lib/cn";
 
 const FONT_OPTIONS: FontOption[] = [

@@ -3,7 +3,7 @@
 import { useCustomizationStore } from "@/stores/customization.store";
 import { ColorPicker } from "@/components/customization/ui/ColorPicker";
 import { cn } from "@/lib/cn";
-import type { ColorPreset, ColorPresetId } from "@/types/customization.types";
+import type { ColorPreset } from "@/types/customization.types";
 
 const COLOR_PRESETS: ColorPreset[] = [
     {

@@ -34,7 +34,7 @@ export function PreviewPanel() {
         <div className="min-h-full bg-black p-4 sm:p-8">
             <div className="max-w-[210mm] mx-auto bg-white text-black min-h-[297mm] shadow-lg p-8 sm:p-12 print:shadow-none print:p-0 print:m-0">
                 {hasNoData ? (
-                    <div className="flex flex-col items-center justify-center h-full min-h-[200px] text-gray-400">
+                    <div className="flex flex-col items-center justify-center h-full min-h-50 text-gray-400">
                         <p className="text-lg font-medium">
                             Your resume preview will appear here
                         </p>

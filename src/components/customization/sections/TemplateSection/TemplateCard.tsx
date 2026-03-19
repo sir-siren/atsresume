@@ -31,7 +31,7 @@ export function TemplateCard({
             )}
         >
             {/* Template preview placeholder */}
-            <div className="relative w-full aspect-[3/4] rounded bg-surface-muted flex items-center justify-center overflow-hidden">
+            <div className="relative w-full aspect-3/4 rounded bg-surface-muted flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-2 flex flex-col gap-1">
                     {/* Mini template wireframe */}
                     <div className="h-2 w-3/4 rounded-sm bg-text-muted/30" />

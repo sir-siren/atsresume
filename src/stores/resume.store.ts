@@ -1,10 +1,7 @@
 "use client";
 
 import { create } from "zustand";
-import {
-    DEFAULT_SECTION_CONFIGS,
-    RESUME_SECTIONS,
-} from "@/config/sections.config";
+import { DEFAULT_SECTION_CONFIGS } from "@/config/sections.config";
 import type {
     SectionId,
     PersonalInfoData,

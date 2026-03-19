@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Image from "next/image";
 import { useCustomizationStore } from "@/stores/customization.store";
 import { SegmentedControl } from "@/components/customization/ui/SegmentedControl";
 import { Upload, X, Circle, Square, RectangleHorizontal } from "lucide-react";
@@ -122,9 +123,11 @@ export function HeaderSection() {
                         <div className="flex items-center gap-2">
                             {photoPreview && (
                                 <div className="relative">
-                                    <img
-                                        src={photoPreview}
+                                    <Image
+                                        src={photoPreview as string}
                                         alt="Profile"
+                                        width={40}
+                                        height={40}
                                         className={cn(
                                             "h-10 w-10 object-cover border border-border-grey",
                                             header.photoShape === "circle" &&

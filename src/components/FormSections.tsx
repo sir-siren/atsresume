@@ -21,14 +21,12 @@ import type {
     ConferenceEntry,
     CourseEntry,
     HobbyEntry,
-    ReferenceEntry,
     SocialPlatform,
     SkillLevel,
     LanguageProficiency,
     ConferenceRole,
     ReferenceRelationship,
     ReferenceVisibility,
-    CustomSectionItem,
 } from "@/types/resume.types";
 import { cn } from "@/lib/cn";
 
