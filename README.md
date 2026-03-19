@@ -1,122 +1,36 @@
-# ATSResume
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A cutting-edge resume builder that helps job seekers create a professional, ATS-friendly resume in minutes. Our platform uses the latest technology to analyze and optimize your resume for maximum visibility and success with applicant tracking systems. Say goodbye to frustration and wasted time spent on manual resume formatting. Create your winning resume with ATSResume today and get noticed by employers.
+## Getting Started
 
-## Demo
+First, run the development server:
 
-#### [https://atsresume.vercel.app/](https://atsresume.vercel.app/)
-![image](https://user-images.githubusercontent.com/61316762/218017511-fbbaa7da-6154-449f-9e46-8de45b0e6c29.png)
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-### Resume Score
-#### https://www.resumego.net/resume-checker/
-![image](https://user-images.githubusercontent.com/61316762/218143206-f0e5e764-52bc-4c25-84f2-6b2fff00cd4b.png)
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Change Log
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-- Drag and drop sections to reorder them in the resume(Work Experience, Projects, Skills)
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Sections
+## Learn More
 
-- [Personal Information](#personal-information)
-- [Social Media](#social-media)
-- [Summary](#summary)
-- [Educations](#education)
-- [Work Experience](#work-experience)
-- [Projects](#projects)
-- [Technical Skills](#technical-skills)
-- [Soft Skills](#soft-skills)
-- [Languages](#languages)
-- [Additional Skills](#additional-skills)
-- [Certifications](#certifications)
+To learn more about Next.js, take a look at the following resources:
 
-## Personal Information
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-- Name
-- Email
-- Phone
-- Address
-- Profile Picture
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Social Media
+## Deploy on Vercel
 
-- Social Media Links
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## Summary
-
-- Summary
-
-## Educations
-
-- Degree
-- Institute
-- Start Date
-- End Date
-
-## Work Experience
-
-- Company
-- Designation
-- Description
-- Key Achievements
-- Start Date
-- End Date
-
-Description optional
-
-## Projects
-
-- Project Name
-- Description
-- key Achievements
-- Start Date
-- End Date
-
-Description optional
-
-## Technical Skills
-
-- Technical Skills
-
-## Soft Skills
-
-- Soft Skills
-
-## Languages
-
-- Languages
-
-## Additional Skills
-
-- Additional Skills
-
-## Certifications
-
-- Certifications
-
-## How to Add Key Achievements
-
-Key achievements are the most important part of your resume. 
-
-- Add key achievements to your resume to make it more attractive and increase your chances of getting noticed by employers.
-- Add key achievements to your work experience and projects.
-- Add key achievements to your resume by clicking on the new line.
-
-## PageSpeed Insights
-
-![image](https://user-images.githubusercontent.com/61316762/218244257-e85172dc-46bd-4f4b-b9c2-9bd17c693cc8.png)
-
-![image](https://user-images.githubusercontent.com/61316762/218244267-c46f5d02-b742-4b4c-ba7e-ae1bfb1e04d4.png)
-
-## License
-
-[MIT](https://github.com/sauravhathi/atsresume/blob/main/LICENSE.md)
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## Authors and acknowledgment
-
-- [Saurav Hathi](https://github.com/sauravhathi)
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
