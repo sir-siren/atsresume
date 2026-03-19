@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ATS Resume Builder
 
-## Getting Started
+A lightning-fast, client-side, ATS-friendly resume builder built with modern web technologies. This application allows users to create, customize, and arrange professional resumes with a real-time preview and drag-and-drop capabilities.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Real-Time Preview:** See your resume update instantly as you type.
+- **Drag and Drop Sections:** Fully customizable layout powered by `@dnd-kit` to reorder sections effortlessly.
+- **Extensive Resume Sections:** Choose from a comprehensive list of categorized sections to build the perfect resume:
+    - **Core:** Personal Information, Social Media, Summary
+    - **Background & Experience:** Education, Work Experience, Projects, Internships, Volunteer Experience
+    - **Skills:** Technical Skills, Soft Skills, Additional Skills
+    - **Achievements:** Awards & Honors, Publications, Conferences
+    - **Learning:** Courses, Tests & Certifications
+    - **Extra & Personal:** Languages, Hobbies & Interests, References
+- **Client-Side State Management:** Lightning-fast local state management using Zustand, ensuring your data is handled securely and efficiently in the browser.
+- **Modern UI:** Styled with Tailwind CSS and enhanced with Lucide React icons for a clean, professional aesthetic.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework:** [Next.js](https://nextjs.org) (App Router)
+- **Library:** React 19
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS, `clsx`, `tailwind-merge`
+- **State Management:** Zustand
+- **Drag & Drop:** `@dnd-kit`
+- **Icons:** Lucide React
+- **Package Manager / Runtime:** [Bun](https://bun.sh/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Getting Started
 
-## Learn More
+First, ensure you have [Bun](https://bun.sh/) installed on your machine.
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    ```bash
+    git clone <your-repo-url>
+    cd atsresume
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Install dependencies:**
 
-## Deploy on Vercel
+    ```bash
+    bun install
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Run the development server:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    ```bash
+    bun run dev
+    ```
+
+4. **Open your browser:**
+   Navigate to [localhost](http://localhost:3000) to see the application in action.
+
+## 📂 Project Structure
+
+- `src/app/` - Next.js App Router pages and layouts.
+- `src/components/` - Reusable UI components (Buttons, Inputs, etc.) and specific feature panels (Sidebar, Preview, Customization).
+- `src/config/` - Configuration files, including the core `sections.config.ts` which defines all available resume sections and their metadata.
+- `src/stores/` - Zustand store definitions for managing resume data and visual customization state.
+- `src/types/` - TypeScript interface definitions for strict typing across the app.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome. Feel free to check the issues page if you want to contribute.
+
+## 📝 License
+
+This project is licensed under the MIT License.

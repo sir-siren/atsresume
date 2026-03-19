@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Google Sans Flex";
-    src: url("/GoogleSansFlex.ttf") format("truetype");
+    src: url("fonts/GoogleSansFlex.ttf") format("truetype");
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
@@ -89,6 +89,7 @@ body {
 
 /* ── Print Styles ── */
 @media print {
+
     /* Hide everything except the resume */
     body {
         background: white !important;
@@ -124,7 +125,7 @@ body {
     }
 
     /* The resume paper itself */
-    .resume-preview > div > div {
+    .resume-preview>div>div {
         max-width: none !important;
         box-shadow: none !important;
         margin: 0 !important;
