@@ -1,12 +1,27 @@
 @import "tailwindcss";
 
 @theme {
+  /* ── Base ─────────────────────────── */
   --color-background: #000000;
   --color-foreground: #ffffff;
   --color-border-grey: #333333;
   --color-input-bg: #111111;
   --color-muted-grey: #888888;
-  
+
+  /* ── Sidebar surface ─────────────── */
+  --color-surface: #0a0a0a;
+  --color-surface-muted: #1a1a1a;
+  --color-border: #2a2a2a;
+
+  /* ── Text ─────────────────────────── */
+  --color-text-primary: #ffffff;
+  --color-text-muted: #888888;
+
+  /* ── Brand (white-accent in B&W) ─── */
+  --color-brand-500: #ffffff;
+  --color-brand-600: #d4d4d4;
+
+  /* ── Fonts ────────────────────────── */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -16,4 +31,92 @@ body {
   color: var(--color-foreground);
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100vh;
+}
+
+/* ── Custom Scrollbar ── */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #444444 #111111;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #111111;
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #444444;
+  border-radius: 4px;
+  border: 2px solid #111111;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #666666;
+}
+
+/* White-background containers get a lighter scrollbar */
+.resume-preview::-webkit-scrollbar-track {
+  background: #e5e5e5;
+}
+
+.resume-preview::-webkit-scrollbar-thumb {
+  background: #999999;
+  border: 2px solid #e5e5e5;
+}
+
+.resume-preview::-webkit-scrollbar-thumb:hover {
+  background: #777777;
+}
+
+/* ── Print Styles ── */
+@media print {
+  /* Hide everything except the resume */
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  /* Hide sidebar, form panel, mobile FAB */
+  aside,
+  nav,
+  button,
+  .sidebar-actions,
+  [aria-label="Open navigation"] {
+    display: none !important;
+  }
+
+  /* The flex wrapper should not constrain */
+  html, body, main {
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Hide the form panel, show only the resume preview */
+  .print-hide {
+    display: none !important;
+  }
+
+  .resume-preview {
+    overflow: visible !important;
+    border: none !important;
+    display: block !important;
+  }
+
+  /* The resume paper itself */
+  .resume-preview > div > div {
+    max-width: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 12mm !important;
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
 }
