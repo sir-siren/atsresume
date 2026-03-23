@@ -1,5 +1,5 @@
 telemetry = false
-logLevel = "debug" # "debug" | "warn" | "error"
+logLevel = "warn" # "debug" | "warn" | "error"
 
 [install]
 auto = "auto"
