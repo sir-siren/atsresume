@@ -1,4 +1,4 @@
-# ATS Resume Builder
+# ATS Resume Builder.
 
 A lightning-fast, client-side, ATS-friendly resume builder built with modern web technologies. This application allows users to create, customize, and arrange professional resumes with a real-time preview and drag-and-drop capabilities.
 
